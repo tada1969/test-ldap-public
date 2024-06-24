@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i "s/$(hostnamectl hostname)/$(hostnamectl hostname).atcreative.internal/g" /etc/hosts
+sed -i "s/$(hostnamectl hostname)/$(hostnamectl hostname | cut -d. -f1).atcreative.internal/g" /etc/hosts
 hostnamectl set-hostname $(hostnamectl hostname | cut -d. -f1).atcreative.internal
 yes '' | apt install freeipa-client -y
 ipa-client-install --unattended --mkhomedir --no-ntp --principal=$FREEIPA_USERNAME --password=$FREEIPA_PASSWORD --force-join
