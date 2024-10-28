@@ -1,5 +1,5 @@
 # ssh-ldap
-### 1.ssh ไปที่ vm แล้ว sudo
+### 1.ssh ไปที่ instance แล้ว sudo
 
 ### 2.ใช้ username, password ของ FreeIPA ที่มี permission เป็น admin
 ```
