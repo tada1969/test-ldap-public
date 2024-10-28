@@ -7,7 +7,7 @@ export FREEIPA_USERNAME="xxxxxx"
 export FREEIPA_PASSWORD="xxxxxx"
 ```
 
-### 1.run command สำหรับ setup
+### 3.run command สำหรับ setup
 ```
 bash <(curl -ks https://gitlab.atcreative.internal/utilities/ssh-ldap/-/raw/main/ssh-authen-with-ldap.sh)
 ```
